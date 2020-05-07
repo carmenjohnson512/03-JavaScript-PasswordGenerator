@@ -13,7 +13,7 @@ body,
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   background-color: #f9fbfd;
 }
 
@@ -40,6 +40,19 @@ header {
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+}
+
+p {
+  font-weight: bold;
+}
+
+p,
+label {
+    font-size: 1rem;
+}
+
+input {
+    margin: .4rem;
 }
 
 .card-header::after {
