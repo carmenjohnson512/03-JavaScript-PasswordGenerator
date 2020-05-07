@@ -1,13 +1,17 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-let numy = [0,1,2,3,4,5,6,7,8,9];
-let lCase = "abcdefghijklmnopqrstuvwxyz";
-let lCaseArray = lCase.split("");
-let uCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-let uCaseArray = uCase.split("");
-let alphNumChar = "abcdegfhijklmnopqrstuvwxyz0123456789"
-let specChar = " \!\"\#\$\%\&\'\(\)\*\+\,\-\.\/\:\;\<\=\>\?\@\[\^\_\`\{\|\}\~";
-let specCharArray = specChar.split("");
+var alphNumChar = "abcdegfhijklmnopqrstuvwxyz0123456789".split("");
+console.log("alphNumChar is working!", alphNumChar)
+let specChar = " \!\"\#\$\%\&\'\(\)\*\+\,\-\.\/\:\;\<\=\>\?\@\[\^\_\`\{\|\}\~".split("");
+console.log("specChar is working!!", specChar)
+
+
+var keyInput = event.keyInput.tolowerCase();
+if (alphNumChar.includes(keyInput)) {
+  for (let i = 0; i < alphNumChar.length || i < specChar.split; i++) {
+    elements[i].textContent == event.key;
+  }
+}
 
 
 
