@@ -4,13 +4,26 @@ var alphNumChar = "abcdegfhijklmnopqrstuvwxyz0123456789".split("");
 console.log("alphNumChar is working!", alphNumChar)
 let specChar = " \!\"\#\$\%\&\'\(\)\*\+\,\-\.\/\:\;\<\=\>\?\@\[\^\_\`\{\|\}\~".split("");
 console.log("specChar is working!!", specChar)
+let alphNumCharUpper = function () {alphNumChar.toUpperCase()};
+console.log(alphNumCharUpper)
+let alphNumCharLower = function () {alphNumChar.toLowerCase()};
+console.log(alphNumCharLower)
 
+// declare function to select Alpha Numeric Character checkbox option
+function includeAlphNumChar() {
+  
+}
 
-var keyInput = event.keyInput.tolowerCase();
-if (alphNumChar.includes(keyInput)) {
-  for (let i = 0; i < alphNumChar.length || i < specChar.split; i++) {
-    elements[i].textContent == event.key;
-  }
+// declare function to select Special Character checkbox option
+function includeSpecChar() {
+
+}
+// declare function to select Special Character checkbox option
+function includeUpperCase() {
+
+}
+function includeLowerCase() {
+
 }
 
 
