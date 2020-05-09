@@ -17,17 +17,17 @@
           <h2>Generate a Password</h2>
           <form>
              <p>Select Character Type:</p> 
-            <input type="checkbox" id="upperCaseChar" class="charChoice" value="Uppercase Letters">
+            <input type="checkbox" id="upperCaseChar" class="charChoice" name="upperCaseChar" value="Uppercase Letters">
             <label for="upperCaseChar">Uppercase Letters</label><br>
-            <input type="checkbox" id="numSpecChar" class="charChoice" value="Numbers & Special Characters">
+            <input type="checkbox" id="numSpecChar" class="charChoice"  name="numSpecChar" value="Numbers & Special Characters">
             <label for="numSpecChar">Numbers & Special Characters</label><br>
-            <input type="checkbox" id="lowerCaseChar" class="charChoice" value="Lowercase Letters">
+            <input type="checkbox" id="lowerCaseChar" class="charChoice"  name="lowerCaseChar" value="Lowercase Letters">
             <label for="lowerCaseChar">Lowercase Letters</label>
             <div>
               <p>Select Password Length:</p>
               <input type="range" id="slider" name="password-length-slider" min="8" max="128" oninput="decideChoices()">
-              <label class="password-length-slider">Passsword Length:
-                <input type="number" id="password-length" value="" readonly="true">
+              <label class="password-length-slider">Password Length:
+                <input type="number" id="password-length" value="8" readonly="true">
               </label>
             </div>
           </form>

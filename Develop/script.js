@@ -47,9 +47,9 @@ function decideChoices () {
     console.log("lowerCaseArray is working!", lowerCaseArray)
   }
 
-  var useAllChar = document.getElementsByClassName('.charChoice:checked');
-  // console.log("useAllChar is working!", useAllChar)
-  if (useAllChar == true) {
+  var useAllChar = document.getElementsByClassName('charChoice'.checked);
+  console.log("useAllChar is working!", useAllChar)
+  if (useAllChar = true) {
     allCharArray = allChoicesArray.concat(allChar);
     console.log("allCharArray is working!", allCharArray)
   }
@@ -60,20 +60,19 @@ function writePassword() {
   // method to set slider value based on slider position
   var sliderValue = document.querySelector("#slider").value;
   console.log(sliderValue)
-  var passwordLength = document.querySelector("#password-length");
+  var passwordLength = document.querySelector("#password-length").value;
   console.log(passwordLength)
-  // // console.log('clicking!!', parseInt(sliderValue))
-  // passwordLength.innerHTML = "Password Length: 8";
-  
+ 
+  var passwordLengthValue = [];
   // // function to set length based on slider position
-//   setPasswordLength = function() {
-//     if(sliderValue >=8) {
-//       passwordLengthValue += sliderValue;
-//     }
-//     else{
-//       passwordLength.value = ""
-//     }
-//   }
+  setPasswordLength = function() {
+    if(sliderValue >=8) {
+      passwordLengthValue += sliderValue;
+    }
+    else{
+      passwordLength.value = ""
+    }
+  }
 // setPasswordLength();
   // console.log('checkbox checkd ???', document.querySelector('#alphNumCharLower:checked').value
 decideChoices();
@@ -85,10 +84,12 @@ decideChoices();
     for(var i = 0; i < parseInt(sliderValue); i++){
       //console.log('looping ?')
       
-      var randomNum = Math.floor(Math.random() * 92);
+      // var randomNum = Math.floor(Math.random() * 8);
+      var randomNum = Math.floor(Math.random() * parseInt(sliderValue));
+
       //console.log('random num ??', randomNum)
-      password += allCharArray.charAt(randomNum);
-      console.log(password)
+      password += allCharArray[randomNum];
+      // console.log(password)
     }
 
     // console.log('password filled up ??', password)
