@@ -70,14 +70,14 @@ function writePassword() {
   // var passwordLengthValue = 68;
   // // function to set length based on slider position
   
-  // var slider = document.getElementById("slider");
-  // var output = document.getElementById("password-length");
-  // output.innerHTML = slider.value; // Display the default slider value
+  var sliderElement = document.getElementById("slider");
+  var output = document.getElementById("password-length");
+  output.innerHTML = sliderElement.value; // Display the default slider value
   
-  // // Update the current slider value (each time you drag the slider handle)
-  // slider.oninput = function() {
-  //   output.innerHTML = this.value;
-  // }
+  // Update the current slider value (each time you drag the slider handle)
+  sliderElement.oninput = function() {
+    output.innerHTML = parseInt(this.value);
+  }
   
   // slider.oninput();
   

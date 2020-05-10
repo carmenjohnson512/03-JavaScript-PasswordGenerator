@@ -1,3 +1,31 @@
+# Carmen Johnson | JavaScript Password Generator
+
+#### Email: carmenjohnson512@gmail.com | LinkedIn: https://www.linkedin.com/in/carmenjohnson512/
+
+![Seated Right Profile Pic](https://github.com/carmenjohnson512/carmenjohnson512.github.io/blob/master/css/seatedDotsProfileRight.jpg?raw=true)
+
+Hey y'all, I'm Carmen!
+
+I'm a singer, wife, mom, and developer. I live in Austin, TX (hook 'em!) and am a true techie at heart. I love creating music, and I love coding. Take a look at some of my creations!
+
+
+## Project Notes
+
+* Leveraging the Bootstrap CSS Framework, I've created a mobile responsive portfolio site, with the following subpages:
+    * `index.html` 
+    * `portfolio.html` 
+    * `resume.html`
+    * `contact.html`
+
+* Each page of the website contains the following elements:
+
+   * A navbar with the following links: Home, Portfolio, Resume, Contact
+   * A responsive layout
+   * Responsive images
+   * A sticky footer
+
+
+
 # 03 JavaScript: Password Generator
 
 Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
