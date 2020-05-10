@@ -17,11 +17,11 @@
           <h2>Generate a Password</h2>
           <form>
              <p>Select Character Type:</p> 
-            <input type="checkbox" id="upperCaseChar" class="upperCharChoice" name="upperCaseChar" value="Uppercase Letters">
+            <input type="checkbox" id="upperCaseChar" class="charChoice" name="upperCaseChar" value="Uppercase Letters">
             <label for="upperCaseChar">Uppercase Letters</label><br>
-            <input type="checkbox" id="numSpecChar" class="numSpecCharChoice"  name="numSpecChar" value="Numbers & Special Characters">
+            <input type="checkbox" id="numSpecChar" class="charChoice"  name="numSpecChar" value="Numbers & Special Characters">
             <label for="numSpecChar">Numbers & Special Characters</label><br>
-            <input type="checkbox" id="lowerCaseChar" class="lowerCharChoice"  name="lowerCaseChar" value="Lowercase Letters">
+            <input type="checkbox" id="lowerCaseChar" class="charChoice"  name="lowerCaseChar" value="Lowercase Letters">
             <label for="lowerCaseChar">Lowercase Letters</label>
             <div>
               <p>Select Password Length:</p>
@@ -42,6 +42,7 @@
         </div>
         <div class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
+          <button id="reset" class="btn">Reset Password</button>
         </div>
       </div>
     </div>
