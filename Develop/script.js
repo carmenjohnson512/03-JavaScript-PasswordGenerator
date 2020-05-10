@@ -31,7 +31,7 @@ function decideChoices () {
     // console.log("use alpha!")
     // allChoicesArray = upperCaseArray.concat(upperCase);
     allChoicesString += allChoicesString.concat(upperCase);
-    console.log(allChoicesString)
+    // console.log(allChoicesString)
 
       // console.log("upperCaseArray is working!", upperCaseArray)
   } 
@@ -63,34 +63,36 @@ function decideChoices () {
 // // Write password to the #password input
 function writePassword() {
   // method to set slider value based on slider position
-  var sliderValue = document.querySelector("#slider").value;
-  console.log("sliderValue is working!", sliderValue)
-  var passwordLength = document.querySelector("#password-length").value;
-  console.log(passwordLength)
- 
-  var passwordLengthValue = [];
+  var slider = document.querySelector("#slider").value;
+  // // console.log("sliderValue is working!", sliderValue)
+  // var passwordLength = document.querySelector("#password-length").value;
+  // // console.log("password Length is returning null value!", passwordLength)
+  // var passwordLengthValue = 68;
   // // function to set length based on slider position
-  setPasswordLength = function() {
-    if(sliderValue >=8) {
-      passwordLengthValue += sliderValue;
-    }
-    else{
-      passwordLength.value = ""
-    }
-  }
-  // setPasswordLength();
+  
+  // var slider = document.getElementById("slider");
+  // var output = document.getElementById("password-length");
+  // output.innerHTML = slider.value; // Display the default slider value
+  
+  // // Update the current slider value (each time you drag the slider handle)
+  // slider.oninput = function() {
+  //   output.innerHTML = this.value;
+  // }
+  
+  // slider.oninput();
+  
   decideChoices();
 
   var allChoicesArray = allChoicesString.split("");
   // console.log("allChoicesString working?", allChoicesArray)
   if (allChoicesArray.length > 0) {
     var password = "";
-    for(var i = 0; i < parseInt(sliderValue); i++){
-      
+    for(var i = 0; i < parseInt(slider); i++){
+      console.log("I'm in the for loop baby!", slider)
       var randomNum = Math.floor(Math.random() * parseInt(allChoicesArray.length));
-
+      // console.log("password before", password);
       password += allChoicesArray[randomNum];
-      // console.log(password)
+      // console.log("password after", password);
     }
 
     var passwordText = document.querySelector("#password");
@@ -99,16 +101,46 @@ function writePassword() {
 }
 // // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
+// console.log("password generating?", writePassword)
 var passwordTextReset = document.querySelector("#password");
-var checkboxChoice = document.getElementsByClassName('charChoice');
+// var checkboxChoice = document.getElementsByClassName('charChoice');
 // console.log("checbox choice array?", checkboxChoice)
 resetBtn.addEventListener("click", function(event) {
   event.preventDefault();
   passwordTextReset.value = "";
-  checkboxChoice.forEach(function(charChoice) {
-    charChoice.checked = false;
-  });
+
+function uncheckAll2() {
+  location.reload();
+  //   var checkboxChoice = document.getElementsByClassName('charChoice');
+  // for(var i = 0; i < checkboxChoice.length; i++) {
+  //   checkboxChoice[i].checked = false;
+  // }
+  }
+
+uncheckAll2();
+
+// function resetCharArrayInput() {
+//   // var allChoicesArray = allChoicesString.split("");
+//   // for(var i = 0; i < allChoicesString.length; i++) {
+//     localStorage.clear();
+//     // console.log("is allChoicesArray resetting?", allChoicesArray)
+//     }
+  
+// resetCharArrayInput();
+});
+
+  // window.onload = function() {
+  //   window.addEventListener('load', unchcheckAll2(), false);
+  // }
+
+
+// checkboxChoice.onload = function() {
+//   resetBtn.addEventListener('click', checkboxChoice, false);
+// }
+
+// checkboxChoice.forEach(function(charChoice) {
+//   charChoice.checked = false;
+
 
 
 
@@ -129,4 +161,4 @@ resetBtn.addEventListener("click", function(event) {
   // clear last checkbox variable selection from memory without refresh
 
 
-});
+
